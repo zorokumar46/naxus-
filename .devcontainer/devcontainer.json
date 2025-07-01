@@ -15,12 +15,12 @@
     "cpus": 4,
     "memory": "16gb"
   },
-  "postCreateCommand": "bash /workspaces/naxus/.devcontainer/setup.sh",
+  "postCreateCommand": "bash /workspaces/naxus-/.devcontainer/setup.sh",
   "remoteUser": "root",
   "mounts": [
     {
       "source": "${localWorkspaceFolder}",
-      "target": "/workspaces/naxus",
+      "target": "/workspaces/naxus-",
       "type": "bind"
     }
   ]
