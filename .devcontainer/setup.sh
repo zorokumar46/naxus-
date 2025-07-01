@@ -24,6 +24,7 @@ scripts=(
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/megen.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega_downloader.sh"
+  "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/nexus.sh"
 )
 
 echo "📥 Downloading all scripts..."
@@ -103,10 +104,6 @@ echo "Browsser is starting"
 curl -sSLO https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/restore.sh && bash restore.sh
 
 
-# Stop containers from restarting automatically
-for cid in $(docker ps -q); do
-  docker update --restart=no "$cid"
-done
+#run nexus container
+# bash nexus.sh
 
-
-echo "✅ All Done Bhai! Ultra OP Container READY 🚀"
