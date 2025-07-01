@@ -5,6 +5,6 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y curl git vim nan
 RUN echo 'ALGO=lz4' > /etc/default/zramswap && echo 'PERCENT=50' >> /etc/default/zramswap && systemctl enable zramswap
 RUN systemctl enable docker
 
-WORKDIR /workspaces/heavyhitter
+WORKDIR /workspaces/naxus
 
 CMD ["/bin/bash"]
