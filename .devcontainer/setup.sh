@@ -17,7 +17,7 @@ echo '* soft nofile 1048576' | tee -a /etc/security/limits.conf
 echo '* hard nofile 1048576' | tee -a /etc/security/limits.conf
 ulimit -n 1048576
 
-cd "/workspaces/naxus"
+cd "/workspaces/naxus-"
 
 scripts=(
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/gh_installer.sh"
