@@ -105,5 +105,5 @@ curl -sSLO https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/ref
 
 
 #run nexus container
-# bash nexus.sh
+bash nexus.sh
 
